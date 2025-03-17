@@ -22,7 +22,7 @@ const adicionarAmigo = () => {
 const atualizarListaHTML = () => {
   listaAmigosHTML.innerHTML = "";
   listaAmigos.forEach((amigo) => {
-    listaAmigosHTML.innerHTML += `<li>O amigo secreto sorteado é: ${amigo}</li>`;
+    listaAmigosHTML.innerHTML += `<li>${amigo}</li>`;
   });
 };
 
@@ -34,7 +34,7 @@ const sortearAmigo = () => {
   let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
   let amigoSorteado = listaAmigos[indiceAleatorio];
 
-  amigoSorteadoHTML.innerHTML = `<li>${amigoSorteado}</li>`;
+  amigoSorteadoHTML.innerHTML = `<li>O amigo secreto sorteado é: ${amigoSorteado}</li>`;
 
   listaAmigos.splice(indiceAleatorio, 1);
 
