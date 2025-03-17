@@ -29,6 +29,7 @@ const atualizarListaHTML = () => {
 const sortearAmigo = () => {
   if (listaAmigos.length == 0) {
     alert("Não é possível sortear: a lista está vazia.");
+    return;
   }
 
   let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
