@@ -22,7 +22,7 @@ const adicionarAmigo = () => {
 const atualizarListaHTML = () => {
   listaAmigosHTML.innerHTML = "";
   listaAmigos.forEach((amigo) => {
-    listaAmigosHTML.innerHTML += `<li>${amigo}</li>`;
+    listaAmigosHTML.innerHTML += `<li>O amigo secreto sorteado é: ${amigo}</li>`;
   });
 };
 
